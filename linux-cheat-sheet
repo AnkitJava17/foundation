@@ -1,0 +1,279 @@
+day 1-
+OS, kernel, DOS, Linux, Linux cmds - ls, cal, date, mkdir, rmdir, rm;
+
+
+day 2-
+wildcards in linux - pattern matching
+	ls D*.txt --> list all starting with D and extension is txt
+	ls D??.txt --> list all starting with D and only 3 chars and extension is txt
+	ls *f*.* --> list all containing f in the title
+	Regex --> ls s[123]*.sh --> list all starting with s1, s2, s3 and extension sh
+		ls s[!123]*.sh --> not starting with s1, s2, s3
+	rmdir --> remove directory
+cat --> display contents of file in linux, (type cmd-> in windows)
+Streams - preconnected input and output
+echo --> display something on screen
+echo "hello world" > file.txt --> insert hello world string in file.txt --> overrides content (Output redirection)
+echo "hello world" >> file.txt --> append data to file not override (double redirection)
+read name --> takes user input and store it in variable named name;
+echo $name --> print the value in name variable;
+
+cat 1> log.txt --> takes input
+cat nothing 2>logf.txt --> shows error
+wc file.txt --> lines, words, characters in a file (Word count)
+cp f1.txt f2.txt --> copy file
+mv source_file new_file_name --> rename 
+rm --> remove
+
+VI editor --> screen based editor
+press i to insert mode
+press esc to get out of VI and enter in cmd mode
+dd to delete line in cmd mode
+press colon quit return to exit
+
+Substitution -->
+	filename substitution
+	variable substitution--> echo ${variable}ing
+	command substitution --> myfiles = $(ls *.txt),   USERS='who | wc-l;
+	arithmetic substitution--> foo=$(60+(6+3))
+	quoting --> use \ in front of special characters to avoid errors
+
+read -p "Enter name" name
+array = ("aa","bb")
+#array[@] (@->all) (#-> length)
+uppercase variables ---> System Variables like PATH,  PWD
+man -> manual for cmds
+
+
+Scripting -->
+	Flow - control -->
+		if list1
+		then
+			list2
+		elif list3
+		then
+			list4
+		else
+			list5
+		fi
+		age=15
+		if [$age -gt 18]; then
+			echo "Can Vote"
+		else
+			echo "can not Vote"
+
+		fi
+
+
+test the script-->
+[ -f /s3if.sh ]
+echo $?
+
+
+if [ -d /$HOME/Documents ] ; then echo "exists" ; fi 
+
+if [ -s /file_name ] ; then echo "it contains" ; fi  --> if file contains some data 
+
+
+case statement
+-->
+Fruit=kiwi
+case "SFRUIT" in
+apple) echo "Apple pie is quite tasty";;
+banana) echo "i like banana nute bread";;
+kiwi) echo "New Zealand is famous for Kiwi";;
+esac
+
+
+ch='h'
+case "${ch}" in [a-z]) echo "a-z";;
+		[A-Z]) echo "A-Z";;
+		[0-9]) echo "0-9";;
+	esac
+
+
+while case ->
+while [ @x -lt 10 ]
+do
+	x = echo "$x + 1" | bc
+	echo $x
+done
+
+
+
+day 3-
+Git
+Version Control
+
+create a repo in GitLab note username and password
+clone -> copy of repo 
+git clone "link"
+https://gitlab.stackroute.in/ankit.bora/ankitlinuxrepo.git
+goto source folder
+cp *.sh ../ankitlinuxrepo/
+goto repo folder
+git -status -> Untracked files
+git add . -> add all files to track
+commit -> make changes
+git commit -m "first"
+push -> push changes to repo
+git push -u origin master/main
+checkout
+
+select loop
+--------------------------------------
+select item in one two three four five
+do
+if [ -z $item ]; then
+	echo "selection if invalid"
+else
+	echo "Your Selection - $REPLY "
+fi
+done
+---------------------------------------
+
+       dir1
+dir11  dir12  dir13
+dir111        dir131
+f1,f5	      f1,f2,f3
+
+untill loop
+break and continue
+select loop
+find command --> find . -type f -name "*.sh"
+sort
+process
+bg
+fg
+kill
+man whatis forums
+chmod numbers777
+--------------------
+function f_name(){
+	statements	
+}
+f_name
+--------------------
+
+
+day 4->
+
+SDLC
+
+Budget
+Time
+Quality
+
+
+Requirements Analysis
+Feasibility analysis
+Document SRS Contract --> (Software Requirement Specification)
+Input Gathering
+Planning 
+Design --> HLD Flow Chart UML ERD OOAD
+Development --> Validation and Verification
+Testing --> Black box, white box, junit testing 
+Deployment
+Maintenance
+
+-----------------
+
+AGILE
+
+TDD (Test driven development)
+
+
+Databases-->
+
+Northwind - Trading company
+single file - schema
+
+
+Testing -->
+Unit --> The smallest testable components of an application, known as units,
+ are separately and separately examined for appropriate operation as part 
+of the unit testing phase of software development. --> white box testing
+
+Integration --> Integration testing is the process of 
+testing several software development components collectively.--> black box testing
+
+System --> 
+System testing makes sure the software works as intended. 
+This procedure, which functions as a 
+form of black box testing, focuses on an application's performance.
+
+User Acceptance Testing  -->
+UAT refers to the last phase of the software testing process. 
+Before releasing the real product, this UAT procedure serves a significant 
+and important function in validating whether all business criteria have been met. 
+
+
+day 5 --> Friday -> 14-04-23
+
+General Testing Principles
+
+1-Testing shows presence of Defects
+2-Exhaustive Testing is Impossible
+3-Early Testing
+4-Defect Clustering
+5-The Pesticide Paradox
+6-Testing is Context Dependent
+7-Absence of Errors Fallacy
+
+
+Agile Methodology -> short term development life cycles
+teamwork
+communication
+metrics-driven
+
+
+keywords->
+epic (the big thing) --> multiple user story --> every user story have multiple task
+
+
+
+day 7 --> Monday (17-04)
+TDD --> test driven development (Gherkin)
+BDD --> behavior driven development
+
+
+Types of Network
+WAN - Wide
+MAN - metropolitan
+VPN - virtual private 
+ip
+router
+network
+
+
+day 8 --> Tuesday (18-04)
+OOPS
+
+benefits of making abstract class--> must make methods for overriding abstract methods 
+
+
+day 12 --> Friday
+
+Dependencies
+Docker --> containerisation
+Kubernetes --> for scalability 
+bson --> binary form of json
+
+
+April 24 Monday
+
+HTML5 --> hyper text markup lang
+cmd-> code . to open folder in vs code
+
+
+April 28
+
+Testing
+chai (library) & mocha (framework)
+mocha is a javascript test framework running on NodeJS (
+chai is a BDD/TDD assertion library for NodeJS
+
+AAA pattern for testing
+A -> Arrange (data or functions or references)
+A -> Act (run function)
+A -> Assert (check expected and actual results) 
