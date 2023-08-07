@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-Strings-Vowels</title>
+
+    <script>
+        function convert(){ 
+            var str = prompt("String: ")
+
+            var ans = str.replace(/[aeiou]/gi, 'b').replace();
+
+            document.getElementById("Res").innerHTML = ans;
+        }
+    </script>
+  </head>
+  <body onload="convert()">
+    <h2 align="center">Converting the string: </h2>
+    <div align="center">
+        <p id="Res"></p>
+    </div>
+  </body>
+</html>

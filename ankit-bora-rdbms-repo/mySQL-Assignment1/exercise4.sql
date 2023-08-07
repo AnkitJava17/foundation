@@ -1,0 +1,1 @@
+delete from student_status where student_id='A003' and Module_Id='J2EE';

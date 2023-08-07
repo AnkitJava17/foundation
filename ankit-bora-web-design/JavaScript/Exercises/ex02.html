@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-Array-Equals</title>
+
+    <script>
+        function calculate(){
+            var arr = Text1.value.split(" ");
+            arr = arr.map(function (num){
+                return parseInt(num);
+            });
+
+            var arr2 = Text2.value.split(" ");
+            arr2 = arr2.map(function (num2){
+                return parseInt(num2);
+            });
+
+            console.log(arr);
+            console.log(arr2);
+
+            if (arr.length != arr2.length){
+                Res.value = "No";
+                return;
+            }
+
+            for (var i=0;i<arr.length;i++){
+                if (arr[i] != arr2[i]){
+                    Res.value = "No";
+                    return;
+                } 
+            }
+            Res.value = "Yes";
+            
+        }
+
+    </script>
+  </head>
+  <body>
+    <h2 align="center">Check Arrays</h2>
+    <div align="center">
+      <table>
+        <tr>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+            <td>Enter Array 1: </td>
+            <td> <input id="Text1" type="text" /></td>
+        </tr>
+        <tr>
+            <td>Enter Array 2: </td>
+            <td> <input id="Text2" type="text" /></td>
+        </tr>
+        <tr>
+            <td>Equal or Not?: </td>
+            <td> <input id="Res" type="text" readonly></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" id="submit" value="Check" onclick="calculate()">
+            </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

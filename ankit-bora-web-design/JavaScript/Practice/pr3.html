@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Star-Flag</title>
+
+    <script>
+        function showFlag(){
+            var nums = parseInt(Text1.value);
+            var val = Text2.value;
+            var c = 1;
+
+            var string = "";
+
+            while (c <= nums){
+                for(var i=0;i<c;i++){
+                    string += val;
+                }
+                string += "<br>";
+                c += 1;
+            }
+            document.getElementById("res").innerHTML = string;
+        }
+
+    </script>
+</head>
+<body>
+    <label for="Text1">Number</label>
+    <input id="Text1" type="text" required />
+
+    <label for="Text2">Pattern</label>
+    <input id="Text2" type="text" required />
+    <input id="Button1" type="button" value="Show Star Flag" onclick="showFlag()"/>
+
+    <p id="res">
+        Result
+    </p>
+    
+</body>
+</html>

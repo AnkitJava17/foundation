@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-CheckArmstrong</title>
+
+    <script>
+      function checkArm() {
+        var num = document.getElementById("Text1").value;
+        var digits = num.length;
+        var number = parseInt(num);
+        if (digits == 0){
+            document.getElementById("res").innerHTML = "Enter a number";
+            return;
+        }
+        var sum = 0;
+        for (var i = 0; i < digits; i++) {
+          sum += Math.pow(parseInt(num.charAt(i)), digits);
+        }
+        if (sum == num) {
+          document.getElementById("res").innerHTML = "Result: Yes";
+        } else {
+          document.getElementById("res").innerHTML = "Result: No";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <input id="Text1" type="text" />
+      <button id="Button1" type="button" value="Check Armstrong" onclick="checkArm()">
+        Check
+      </button>
+      <p id="res"></p>
+    </div>
+  </body>
+</html>

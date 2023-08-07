@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-CheckBox</title>
+
+    <script>
+      function getCheckedCheckboxesFor(checkboxName) {
+        var checkboxes = document.querySelectorAll(
+            'input[name="' + checkboxName + '"]:checked'
+          ),
+          values = [];
+          items = [];
+        Array.prototype.forEach.call(checkboxes, function (el) {
+             const arr = el.value.split(" ");
+          values.push(arr[1]);
+          items.push(arr[0]);
+        });
+        var sum = 0;
+        
+        values.forEach(num => { sum += parseInt(num) });
+
+        var ans = "";
+        items.forEach(val => { ans += val+", " });
+        document.getElementById("res").innerHTML = "Selected items are: " + ans + " total value = " + sum;
+      }
+    </script>
+  </head>
+  <body style="width: max-content">
+    <div style="font-size: xx-large">
+      <input type="checkbox" name="item" value="Laptop 2000" />
+      <label for="item">Laptop</label>
+      <input type="checkbox" name="item" value="Tablet 3300" />
+      <label for="item">Tablet</label>
+      <input type="checkbox" name="item" value="Mobile 1200" />
+      <label for="item">Mobile</label>
+      <input type="checkbox" name="item" value="Mouse 7000" />
+      <label for="item">Mouse</label>
+      <input type="checkbox" name="item" value="Keyboard 9000" />
+      <label for="item">Keyboard</label>
+    </div>
+    <br />
+
+    <input
+      type="button"
+      value="check-selected-items"
+      onclick="getCheckedCheckboxesFor('item')"
+      style="font-size: xx-large"
+    />
+    <p id="res"></p>
+  </body>
+</html>

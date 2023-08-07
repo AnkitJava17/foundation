@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS01</title>
+
+    <script>
+      // alert("In Head Section...")
+    </script>
+  </head>
+  <body onload="SayHello()">
+    <p id="p1">Learning JavaScript...</p>
+    <button id="hello1" onclick="SayHello()">Say Hello</button>
+
+    <input id="hello2" type="button" value="Say Hello" onclick="SayHello()" />
+
+    <input
+      id="changep"
+      type="button"
+      value="change para content"
+      onclick="changeParagraphContent()"
+    />
+
+    <script>
+      // alert("In body Section...")
+      function SayHello() {
+        alert("Hello All");
+      }
+      // SayHello();
+
+      function changeParagraphContent() {
+        // let para = document.getElementById("p1");
+        // para.innerHTML = "Started Learning JS....";
+
+        document.getElementById("p1").innerHTML = "Started Learning JS....";
+      }
+    </script>
+  </body>
+</html>
+
+<!-- 
+    button - onClick
+    webPage - onLoad
+    Property (have getter n setter) -- value
+    Behavior -- eventHandler like change()
+    Event
+    method naming convention ==> camel Case
+
+    ES6 -- EcmaScript2015
+ -->

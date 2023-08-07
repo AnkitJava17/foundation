@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FSD App</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-dark">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand"
+          ><img src="/images/luffy.png" alt="" width="50" height="40"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="What you'll learn"
+                target="_blank"
+                >What you'll learn</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="How it works"
+                target="_blank"
+                >How it works</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                role="button"
+                target="_blank"
+                >Career Outcomes</a
+              >
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a href="#" class="dropdown-item">Career MentorShip</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Exclusive expert Classes</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Access to curated Jobs</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+      voluptate! Quis, hic eos quaerat aspernatur dolore doloremque quasi
+      nostrum voluptatibus tempora doloribus non saepe exercitationem molestiae
+      vero eaque, omnis similique?
+    </p>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="cotainer">
+        <p class="lead">
+          &copy; 2021
+          <a href="">Terms of Use | <a href="#">Privacy Policy</a></a>
+        </p>
+        <div class="row">
+          <div class="col md-4">
+            <h6>SITE LINKS</h6>
+            <p>
+              <a href="#">Contact Us<br /></a>
+              <a href="#">About Us<br /></a>
+              <a href="#">Directions<br /></a>
+              <a href="#">Blog<br /></a>
+            </p>
+          </div>
+          <div class="col md-4">
+            <h6>OUR PROGRAMS</h6>
+            <p>
+              <a href="#">Software Engineering<br /></a>
+              <a href="#">MEAN stack<br /></a>
+              <a href="#">DevOps<br /></a>
+              <a href="#">MERN Stack<br /></a>
+            </p>
+          </div>
+          <div class="col md-4">
+            <h6>MORE INFO</h6>
+            <p>
+              <a href="#">Promotions<br /></a>
+              <a href="#">Partners<br /></a>
+              <a href="#">Careers<br /></a>
+              <a href="#">FAQs<br /></a>
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col md-9">
+            <div class="input-group news-input">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Your Email"
+              />
+              <!-- <a href="" data-bs-toggle="popover" data-bs-trigger="focus" title="Good News" content="Subscribe here to receive latest updates"> -->
+              <button
+                class="btn btn-outline-light btn-sm"
+                data-bs-toggle="modal"
+                data-bs-target="#subscribe"
+                type="button"
+              >
+                Subscribe
+              </button>
+              <!-- </a> -->
+            </div>
+          </div>
+          <div class="col md-3">
+            <bi class="bi-facebook h4"></bi>
+            <bi class="bi-twitter h4"></bi>
+            <bi class="bi-instagram h4"></bi>
+            <bi class="bi-linkedin h4"></bi>
+          </div>
+        </div>
+        <a href="#" class="position-absolute-bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- modal -->
+    <div
+      class="modal"
+      tabindex="-1"
+      id="subscribe"
+      aria-labelledby="enrolLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog model-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title" id="enrolLabel">Subscription Successful</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Congratulaitons! You took the first step to become a Full Stack
+              Developer.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

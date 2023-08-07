@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modernizer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .uContainer {
+        /* border-color: black;
+        border-style: dashed; */
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .main-body {
+        /* border-color: black;
+        border-style: dashed; */
+        margin-top: 60px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .col-md-6{
+        margin-top: 20px;
+        /* border-color: black;
+        border-style: dashed; */
+      }
+      .col-md-5{
+        margin-left: 20px;
+        /* border-color: black;
+        border-style: dashed; */
+      }
+
+      .col-md-5.talk{
+        margin-top: 10px;
+        margin-left: 20px;
+        /* border-color: black;
+        border-style: dashed; */
+      }
+      .midHead {
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand"
+          ><img src="/assets/logo.svg" alt="" width="150" height="50"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+          aria-controls="navmenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navmenu"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link active"
+                aria-current="page"
+                >DOWNLOAD</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link active"
+                >DOCUMENTATION</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link active"
+                aria-current="page"
+                >NEWS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link active"
+                aria-current="page"
+                >RESOURCES</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Body -- Upper -->
+    <div class="uContainer">
+      <div class="first-head">
+        <h1>Respond to your user's browser features.</h1>
+      </div>
+      <br />
+
+      <div class="midHead">
+        <h5>
+          Modernizer tells you what HTML, CSS and JavaScript features the user's
+          browser has to offer
+        </h5>
+      </div>
+      <br />
+      <br />
+
+      <div class="Buttons">
+        <button type="button" class="btn btn-danger">Add your defects</button>
+
+        <button type="button" class="btn btn-outline-secondary">
+          Development Build
+        </button>
+      </div>
+    </div>
+
+    <div class="main-body">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>What is Modernizer?</h4>
+          <p>
+            It's a collections of superfast tests - or "detects" as we like to
+            call them - which run as your web page loads, then you can use the
+            results to tailor the experience to the user.
+          </p>
+
+        <h4>Why do I need it?</h4>
+        <p>
+          All web developers come up against differences between browsers and
+          devices. That's largely due to different feature sets: the latest
+          versions of the popular browsers can do some awesome things which
+          older browsers can't - but we still have to support the older ones.
+        </p>
+        <p>
+          Modernizer makes it easy to deliver tiered experiences: make use of
+          the latest and greatest features in browsers which support them,
+          without leaving less fortunate users high and dry.
+        </p>
+      </div>
+
+      <div class="col-md-6">
+        <div class="row">
+        <div class="col-md-5">
+          <h5>Getting Started</h5>
+          <hr>
+          <ul>
+            <li>Modernizer explained</li>
+            <li>What is feature detection?</li>
+            <li>Using Modernizer with JavaScript</li>
+            <li>Using Modernizer with CSS</li>
+          </ul>
+        </div>
+        <div class="col-md-5">
+            <h5>Latest News</h5>
+            <hr>
+            <ul>
+              <li>Modernizer 3.5.0</li>
+              <li>Modernizer 3.4.0</li>
+              <li>Modernizer 3.3.1</li>
+              <li>Modernizer 3.3.0</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-5 talk">
+            <h5>Talk to us</h5>
+            <hr>
+            <ul>
+                <li>Twitter</li>
+                <li>StackOverflow</li>
+                <li>GitHub</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <!-- Footer -->
+    <footer class="p-1 bg-gradient text-light text-center" style="background-color: crimson;">
+        <div class="row">
+            <div class="col">
+                <p> Made with love by Faruk, Paul, Alex, Ryan, Patrick, Stu and Richard</p>
+                <p>Subscribe to the feed, follow on twitter, or Contact Us. Donations are cool, too.</p>
+            </div>
+            <div class="col-md-2">
+                <img src="assets/github.svg" alt="" width="70" height="60">
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-SQRT</title>
+
+    <script>
+        function calculate(){
+            var num = Text1.value;
+            var ans = Math.sqrt(num);
+            ans = ans.toFixed(2);
+            Res.value = ans;
+        }
+
+        function reset(){
+            location.reload();
+        }
+    </script>
+  </head>
+  <body>
+    <h2 align="center">Calculate SQRT</h2>
+    <div align="center">
+      <table>
+        <tr>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+            <td>Enter Number: </td>
+            <td> <input id="Text1" type="text" /></td>
+        </tr>
+        <tr>
+            <td>Square Root: </td>
+            <td> <input id="Res" type="text" readonly></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" id="submit" value="Submit" onclick="calculate()">
+                <input type="button" id="reset" value="Reset" onclick="reset()">
+            </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

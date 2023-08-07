@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-Min-Element</title>
+
+    <script>
+        function calculate(){
+            const arr = Text1.value.split(" ");
+            const arr2 = arr.map(function (num){
+                return parseInt(num);
+            });
+
+            arr2.sort();
+
+            console.log(arr2);
+
+            var i;
+            for (i=0;i<arr2.length-1;i++){
+                if (arr2[i] == arr2[i+1]){
+                    continue;
+                }else{
+                    break;
+                }
+            }
+
+            Res.value = arr2[i+1];
+        }
+
+        function reset(){
+            location.reload();
+        }
+    </script>
+  </head>
+  <body>
+    <h2 align="center">Get Minimum in Array</h2>
+    <div align="center">
+      <table>
+        <tr>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+            <td>Enter Array: </td>
+            <td> <input id="Text1" type="text" /></td>
+        </tr>
+        <tr>
+            <td>Second Minimum is: </td>
+            <td> <input id="Res" type="text" readonly></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" id="submit" value="Find" onclick="calculate()">
+                <input type="button" id="reset" value="Reset" onclick="reset()">
+            </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

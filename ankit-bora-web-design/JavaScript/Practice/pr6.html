@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-EMI</title>
+
+    <script>
+        function calculate(){
+            var princpal = parseInt(Text1.value);
+            var rate = parseInt(Text2.value);
+            var tenure = parseInt(Text3.value);
+
+            var ans = princpal * rate * Math.pow((1+rate),tenure);
+            ans = ans / (Math.pow((1+rate),tenure)-1);
+
+            document.getElementById("res").innerHTML = "EMI is Rs." + ans.toFixed(2);
+        }
+
+        function reset(){
+            location.reload();
+        }
+    </script>
+  </head>
+  <body>
+    <h2 align="center">Calculate SQRT</h2>
+    <div align="center">
+      <table>
+        <tr>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+            <td>Principal Amount in Rs. </td>
+            <td> <input id="Text1" type="text" /></td>
+        </tr>
+        <tr>
+            <td>Interest Per Annum: </td>
+            <td> <input id="Text2" type="text"></td>
+        </tr>
+        <tr>
+            <td>Tenure in Months: </td>
+            <td> <input id="Text3" type="text"></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" id="submit" value="Calculate" onclick="calculate()">
+            </td>
+            <td>
+                <input type="button" id="reset" value="Clear" onclick="reset()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p id="res"></p>
+            </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
